@@ -103,11 +103,11 @@ def lambda_handler(event, context):
 ---
 
 ### **🚀 How It Works**
-1. **Create an S3 bucket** (e.g., `s3-file-watcher`).  
+1. **Create an S3 bucket** (e.g., `lambda-file-handler`).  
 2. **Create a Lambda function** using the above Python code.  
 3. **Create an SNS topic** and subscribe your email.  
 4. **Attach the correct IAM role** so Lambda can access S3 and SNS.  
-5. **Add an S3 trigger** for `ObjectCreated` events to invoke the Lambda function.  
+5. **Add an S3 trigger** for `beach.jpg` events to invoke the Lambda function.  
 6. **Upload a file (e.g., beach.jpg)** to your bucket — and check your email for a notification!  
 
 ---
@@ -124,10 +124,3 @@ def lambda_handler(event, context):
 - Add **CloudWatch alarms** for failed uploads.  
 - Use **SES (Simple Email Service)** for richer email templates.  
 - Extend to process or analyze files (e.g., image size, metadata).  
-
----
-
-### **👨🏽‍💻 Author**
-**Dava Lott**  
-Cloud Engineering Student | Aspiring Cloud Engineer  
-[LinkedIn](https://www.linkedin.com/) • [GitHub](https://github.com/)
