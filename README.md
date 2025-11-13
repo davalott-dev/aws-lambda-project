@@ -1,4 +1,4 @@
-# 🪶 AWS S3 → Lambda → SNS File Upload Notifier  
+# AWS S3 → Lambda → SNS File Upload Notifier  
 
 ### **Project Overview**
 This project demonstrates how to automate notifications when a file is uploaded to an Amazon S3 bucket using a **serverless AWS architecture**.  
@@ -76,7 +76,7 @@ s3-lambda-sns-notifier/
 
 ---
 
-### **🧠 Lambda Function (Python)**
+### **Lambda Function (Python)**
 ```python
 import json
 import boto3
@@ -102,7 +102,7 @@ def lambda_handler(event, context):
 
 ---
 
-### **🚀 How It Works**
+### **How It Works**
 1. **Create an S3 bucket** (e.g., `lambda-file-handler`).  
 2. **Create a Lambda function** using the above Python code.  
 3. **Create an SNS topic** and subscribe your email.  
@@ -112,7 +112,7 @@ def lambda_handler(event, context):
 
 ---
 
-### **📊 What I Learned**
+### **What I Learned**
 - How AWS **event-driven architectures** work.  
 - The importance of **IAM roles and permissions** in automation.  
 - How to integrate multiple AWS services without using servers.  
@@ -120,7 +120,7 @@ def lambda_handler(event, context):
 
 ---
 
-### **🧠 Future Improvements**
+### **Future Improvements**
 - Add **CloudWatch alarms** for failed uploads.  
 - Use **SES (Simple Email Service)** for richer email templates.  
 - Extend to process or analyze files (e.g., image size, metadata).  
